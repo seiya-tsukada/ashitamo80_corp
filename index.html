@@ -1,206 +1,590 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-<!-- common -->
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>株式会社アシタモハレ｜評価・報酬制度の設計と運用定着に特化した人事コンサルティング</title>
+<meta name="description" content="株式会社アシタモハレは、等級・評価・報酬制度の設計から、評価者研修・キャリブレーション会議の同席まで運用サイクルを伴走する人事コンサルティング会社です。累計132社の制度設計を支援。東京・大阪。">
+<meta name="keywords" content="人事制度設計,評価制度,報酬制度,等級制度,評価者研修,人事コンサルティング,従業員サーベイ,人件費マネジメント">
+<meta name="author" content="株式会社アシタモハレ">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="format-detection" content="telephone=no">
-<meta name="keywords" content="">
-<meta name="description" content="私たちはさまざまな課題に対して、さまざまな角度から、課題解決、支援を行うリーディングカンパニーです">
-<link rel="shortcut icon" href="">
-<link rel="apple-touch-icon" href="">
-<meta property="og:locale" content="ja_JP">
-<meta property="og:site_name" content="" />
-<meta property="og:title" content="FBranch合同会社 | FBranch LLC." />
-<meta property="og:type" content="website" />
-<meta property="og:description" content="私たちはさまざまな課題に対して、さまざまな角度から、課題解決、支援を行うリーディングカンパニーです" />
-<meta property="og:url" content="http://www.fbranch.co.jp/" />
-<meta property="og:image" content="" />
-<title>FBranch合同会社 | FBranch LLC.</title>
-<!-- /common -->
-<!-- 共通CSS -->
-<link rel="stylesheet" href="./css/common.css">
-<!-- 共通JS -->
-<!-- Web font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Rubik&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#f4f3ee">
+<link rel="canonical" href="https://www.ashitamo80.com/">
 
-  <link rel="stylesheet" type="text/css" href="./css/top.css">
-  <script src="./js/top.js"></script>
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="株式会社アシタモハレ">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://www.ashitamo80.com/">
+<meta property="og:title" content="株式会社アシタモハレ｜評価制度は、運用されてはじめて機能する。">
+<meta property="og:description" content="等級・評価・報酬の設計から、評価者研修とキャリブレーション会議の同席まで。制度が現場の言葉になるところまで伴走する人事コンサルティング。">
+<meta property="og:image" content="https://www.ashitamo80.com/img/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="株式会社アシタモハレ｜評価制度は、運用されてはじめて機能する。">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Icons -->
+<link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+
+<link rel="stylesheet" href="/css/style.css">
+
+<!-- 構造化データ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.ashitamo80.com/#organization",
+      "name": "株式会社アシタモハレ",
+      "alternateName": "ASHITAMOHARE Inc.",
+      "url": "https://www.ashitamo80.com/",
+      "logo": "https://www.ashitamo80.com/img/logo.svg",
+      "image": "https://www.ashitamo80.com/img/ogp.png",
+      "description": "等級・評価・報酬制度の設計と運用定着支援に特化した人事コンサルティング会社。",
+      "foundingDate": "2017-05",
+      "founder": { "@type": "Person", "name": "佐久間 陽子" },
+      "numberOfEmployees": { "@type": "QuantitativeValue", "value": 24 },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "JP",
+        "postalCode": "151-0053",
+        "addressRegion": "東京都",
+        "addressLocality": "渋谷区",
+        "streetAddress": "代々木3-8-3 代々木フロントビル7F"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+81-3-1234-5678",
+        "contactType": "customer support",
+        "areaServed": "JP",
+        "availableLanguage": "Japanese"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.ashitamo80.com/#website",
+      "url": "https://www.ashitamo80.com/",
+      "name": "株式会社アシタモハレ",
+      "inLanguage": "ja",
+      "publisher": { "@id": "https://www.ashitamo80.com/#organization" }
+    },
+    {
+      "@type": "Service",
+      "name": "評価・報酬制度の設計",
+      "serviceType": "人事制度設計コンサルティング",
+      "provider": { "@id": "https://www.ashitamo80.com/#organization" },
+      "areaServed": "JP"
+    }
+  ]
+}
+</script>
 </head>
 
-<body id="top">
-<header class="header_wrapper js-header">
-  <a class="header_logo" href="#">FBranch</a>
-  <div class="menu js-menu">
-    <a class="menu_button js-menu-button">
-      <div class="menu_button_item"></div>
+<body>
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<!-- ============ Header ============ -->
+<header class="header" id="header">
+  <div class="wrap header__inner">
+    <a class="brand" href="/" aria-label="株式会社アシタモハレ ホームへ">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+        <circle cx="16" cy="14.5" r="7" fill="none" stroke="currentColor" stroke-width="1.4"/>
+        <path d="M3 22.5h26M7.5 26.5h17" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+      </svg>
+      <span>
+        <span class="brand__name">アシタモハレ</span>
+        <span class="brand__latin">Ashitamohare Inc.</span>
+      </span>
     </a>
-    <div class="menu_overlay spOnly"></div>
-    <ul class="menu_list">
-      <li class="menu_list_item"><a class="menu_list_link" href="#aboutus">ABOUT US</a></li>
-      <li class="menu_list_item"><a class="menu_list_link" href="#service">SERVICE</a></li>
-      <li class="menu_list_item"><a class="menu_list_link" href="#team">TEAM</a></li>
-      <li class="menu_list_item"><a class="menu_list_link" href="#company">COMPANY</a></li>
-      <li class="menu_list_item"><a class="menu_list_link" href="#contact">CONTACT</a></li>
-    </ul>
+
+    <button class="nav-toggle" id="navToggle" type="button"
+            aria-expanded="false" aria-controls="gnav" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="gnav" id="gnav" aria-label="グローバルナビゲーション">
+      <ul class="gnav__list">
+        <li><a class="gnav__link" href="#services">事業紹介</a></li>
+        <li><a class="gnav__link" href="#process">支援の進め方</a></li>
+        <li><a class="gnav__link" href="#company">会社概要</a></li>
+        <li><a class="gnav__link" href="#news">ニュース</a></li>
+        <li><a class="gnav__link" href="#careers">採用情報</a></li>
+      </ul>
+      <a class="btn-contact" href="#contact">お問い合わせ</a>
+    </nav>
   </div>
 </header>
-  <main>
-    <!-- about -->
-    <section id="aboutus" class="section about">
-      <div class="section_inner about_section">
-        <h1 class="c-headding" style="display:none">ABOUT US</h1>
-        <h2 class="c-headding_sub" style="display:none">わたしたちについて</h2>
-        <div class="about_mainvis">
-          <img class="about_mainvis_image js-mainvis_image" src="./img/img-bg.jpg" alt="" />
-        </div>
-        <div class="about_message">
-          <div class="motion is-show"><p class="c-text about_lead">人・組織への切り口を通じて<span class="spOnly">ビジネスの成功確度をあげる</span></p></div></br class="spOnly">
-          <div class="motion is-show pcOnly"><p class="c-text about_lead">ビジネスの成功確度をあげる</p></div>
-          <p class="c-text about_text fade-top is-show">
-            私たちは、<b>"人・組織への切り口を通じてビジネスの成功確度をあげる"</b> を目的としたHRコンサルティング会社です。
-          </p>
-          <p class="c-text about_text fade-top is-show">
-            日本を良くしていくのは間違いなく各企業であり、その各企業がせっかく良い事業に挑んでいるにも関わらず、<br class="pcOnly" />
-            人・組織のことで多くのことを悩み、多くの時間を喪失していることが非常に勿体ないと感じています。<br class="mb-20" />
-          </p>
-          <p class="c-text about_text fade-top is-show">
-              私たちは、「正しいことを言う支援ではなく、正しい方向に導く支援」を通じて、人・組織のことで悩む時間を極小化し、<br  class="pcOnly" />
-              ビジネスの成功確度をあげていく、そんなお手伝いをしてまいります。
-          </p>
-        </div>
-        <div class="scroll-down is-active is-inview">
-          <div class="scroll-down_text"><span>scroll</span></div>
-          <div class="scroll-down_line"></div>
+
+<main id="main">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="wrap hero__grid">
+      <div class="hero__side">
+        <span class="eyebrow">HR Consulting</span>
+        <p>評価・報酬制度の<br>設計と浸透に特化した<br>人事コンサルティング</p>
+      </div>
+
+      <div class="hero__body">
+        <span class="tag-mock">Design Mock — 架空の企業サイトです</span>
+        <h1 class="hero__title" id="heroTitle">評価制度は、運用されて<br>はじめて機能する。</h1>
+        <p class="hero__text">
+          私たちは、等級・評価・報酬の設計から、評価者研修とキャリブレーション会議の同席まで、最初の運用サイクルを一緒に回します。制度が現場の言葉になるところまでが、私たちの仕事です。
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--fill" href="#services">支援内容を見る<span class="btn__arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn--line" href="#contact">制度診断のご相談</a>
         </div>
       </div>
-    </section>
-    <!-- /about -->
-    <!-- service -->
-    <section id="service" class="section section-article service">
-      <div class="section_inner">
-        <div class="motion motion-bl">
-          <h1 class="c-headding">SERVICE</h1>
+    </div>
+
+    <!-- 実績数値 -->
+    <div class="wrap">
+      <dl class="stats" id="stats">
+        <div class="stats__item">
+          <dt class="eyebrow">Companies</dt>
+          <dd class="stats__num"><span class="js-count" data-count="132">132</span><span class="stats__unit">社</span></dd>
+          <dd class="stats__note">2017年の創業から2026年8月までの制度設計支援企業数</dd>
         </div>
-        <h2 class="c-headding_sub fade">サービス</h2>
-        <div class="service_list fade">
-          <dl class="service_list_item">
-            <dt class="service_list_item_title">
-              <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 2h5v4h-5z" /><path d="M15 10h5v4h-5z" /><path d="M5 18h5v4h-5z" /><path d="M5 10h5v4h-5z" /><path d="M10 12h5" /><path d="M7.5 6v4" /><path d="M7.5 14v4" /></svg>
-              <span>人事のトータル伴走支援</span>
-            </dt>
-            <dd class="c-text service_list_item_text">
-              ・人事組織の立ち上げ<br />
-              ・人事戦略の立案・実行<br />
-              ・人事制度（評価・報酬等）の設計・改定<br />
-              ・マネージャーの教育・育成<br />
-              ・その他、人材育成、組織開発、労務など人事のいかなる領域での伴走支援が可能
-            </dd>
-          </dl>
-          <dl class="service_list_item">
-            <dt class="service_list_item_title">
-              <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 12a9 9 0 1 0 -9 9" /><path d="M9 10h.01" /><path d="M15 10h.01" /><path d="M9.5 15c.658 .672 1.56 1 2.5 1" /><path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M20.2 20.2l1.8 1.8" /></svg>
-              <span>人・組織問題の未然検知</span></dt>
-            <dd class="c-text service_list_item_text">
-              ・Coming Soon
-            </dd>
-          </dl>
+        <div class="stats__item">
+          <dt class="eyebrow">Trained Raters</dt>
+          <dd class="stats__num"><span class="js-count" data-count="8400">8,400</span><span class="stats__unit">名</span></dd>
+          <dd class="stats__note">評価者研修の累計受講者数（管理職・考課者）</dd>
+        </div>
+        <div class="stats__item">
+          <dt class="eyebrow">Rollout Support</dt>
+          <dd class="stats__num"><span class="js-count" data-count="14">14</span><span class="stats__unit">ヶ月</span></dd>
+          <dd class="stats__note">運用定着支援の平均期間。おおむね1.5サイクル分</dd>
+        </div>
+        <div class="stats__item">
+          <dt class="eyebrow">Acceptance</dt>
+          <dd class="stats__num"><span aria-hidden="true">+</span><span class="js-count" data-count="23">23</span><span class="stats__unit">pt</span></dd>
+          <dd class="stats__note">「評価に納得している」と答えた社員の割合の平均変化（導入前後）</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ Services ============ -->
+  <section class="section section--panel" id="services" aria-labelledby="servicesTitle">
+    <div class="wrap split">
+      <div class="split__head">
+        <span class="eyebrow">Services</span>
+        <h2 class="sec-title" id="servicesTitle">事業紹介</h2>
+        <p class="sec-lead">評価・報酬制度の設計と浸透を、ひとつづきの仕事として引き受けます。制度が伝わる、動く、続くことを目的に支援します。</p>
+      </div>
+
+      <div class="split__body">
+
+        <article class="service reveal">
+          <p class="service__id">S–01</p>
+          <div>
+            <h3 class="service__title">評価・報酬制度の設計 <span class="badge">Case</span></h3>
+            <p class="service__desc">等級・評価・報酬の三点をセットで設計します。等級要件はできるだけ現場の言葉で書き出し、そのうえで評価項目に翻訳します。報酬テーブルは昇給原資のシミュレーションを行い、実際の人件費として成立するかを確認したうえで確定します。</p>
+          </div>
+          <div class="deliverables">
+            <span class="deliver__label">主な提供物</span>
+            <ul class="deliver__list">
+              <li>等級定義書・等級要件シート</li>
+              <li>評価シート（目標管理・行動評価）</li>
+              <li>報酬テーブル・賃金カーブ</li>
+              <li>昇給原資シミュレーション</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service reveal">
+          <p class="service__id">S–02</p>
+          <div>
+            <h3 class="service__title">制度の浸透・運用定着 <span class="badge">Case</span></h3>
+            <p class="service__desc">評価者研修と社員向け説明会を実施し、最初の目標設定面談からフィードバック面談まで見届けます。評価のばらつきが出やすいキャリブレーション会議は、私たちが進行役として同席します。運用しながら出た不都合は、期末に制度側へ反映します。</p>
+          </div>
+          <div class="deliverables">
+            <span class="deliver__label">主な提供物</span>
+            <ul class="deliver__list">
+              <li>評価者研修（半日／全日）</li>
+              <li>社員向け制度説明会資料</li>
+              <li>運用マニュアル・面談ガイド</li>
+              <li>キャリブレーション会議の運営設計</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service reveal">
+          <p class="service__id">S–03</p>
+          <div>
+            <h3 class="service__title">人事制度診断・従業員サーベイ</h3>
+            <p class="service__desc">作り直す前に、いまの制度のどこが効いていないのかを確かめます。評価分布の甘辛や滞留年数の確認と、社員への納得度サーベイを組み合わせ、制度の問題か運用の問題かを切り分けます。</p>
+          </div>
+          <div class="deliverables">
+            <span class="deliver__label">主な提供物</span>
+            <ul class="deliver__list">
+              <li>現行制度診断レポート</li>
+              <li>納得度サーベイ（設問設計・集計）</li>
+              <li>評価分布・評価者間の甘辛分析</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service reveal">
+          <p class="service__id">S–04</p>
+          <div>
+            <h3 class="service__title">要員計画・人件費マネジメント</h3>
+            <p class="service__desc">制度は人件費の設計でもあります。等級別の要員構成と昇格ペースから3ヵ年の人件費を試算し、採用計画と昇給方針の前提をそろえます。就業規則の改定が必要な場合は、提携する社会保険労務士法人と連携して進めます。</p>
+          </div>
+          <div class="deliverables">
+            <span class="deliver__label">主な提供物</span>
+            <ul class="deliver__list">
+              <li>等級別要員計画（3ヵ年）</li>
+              <li>人件費推移シミュレーション</li>
+              <li>賃金規程の改定案（社労士連携）</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Process ============ -->
+  <section class="section section--soft" id="process" aria-labelledby="processTitle">
+    <div class="wrap split">
+      <div class="split__head">
+        <span class="eyebrow">Process</span>
+        <h2 class="sec-title" id="processTitle">支援の進め方</h2>
+        <p class="sec-lead">設計だけなら4〜6ヶ月ですが、私たちは運用サイクルの見通しまでを標準の範囲としています。</p>
+      </div>
+
+      <div class="split__body">
+        <ol class="steps">
+          <li class="step reveal">
+            <p class="step__id">Step 01</p>
+            <h3 class="step__title">診断</h3>
+            <p class="step__text">現行制度の課題整理、評価分布の分析、経営層と現場双方へのヒアリング。</p>
+            <p class="step__term"><span>目安</span><b>4〜6週</b></p>
+          </li>
+          <li class="step reveal">
+            <p class="step__id">Step 02</p>
+            <h3 class="step__title">設計</h3>
+            <p class="step__text">等級・評価・報酬を並行して設計し、経営会議での合意形成まで伴走します。</p>
+            <p class="step__term"><span>目安</span><b>3〜4ヶ月</b></p>
+          </li>
+          <li class="step reveal">
+            <p class="step__id">Step 03</p>
+            <h3 class="step__title">説明・研修</h3>
+            <p class="step__text">評価者研修と全社説明会を実施し、面談用の資料と質問対応を整えます。</p>
+            <p class="step__term"><span>目安</span><b>1〜2ヶ月</b></p>
+          </li>
+          <li class="step reveal">
+            <p class="step__id">Step 04</p>
+            <h3 class="step__title">運用同行</h3>
+            <p class="step__text">目標設定・中間・期末の各面談期に同席し、キャリブレーション会議を進行します。</p>
+            <p class="step__term"><span>目安</span><b>6〜12ヶ月</b></p>
+          </li>
+          <li class="step reveal">
+            <p class="step__id">Step 05</p>
+            <h3 class="step__title">見直し</h3>
+            <p class="step__text">1サイクル終了後、評価者サーベイをもとに、評価項目と運用ルールを補正。</p>
+            <p class="step__term"><span>目安</span><b>1ヶ月／年次</b></p>
+          </li>
+        </ol>
+        <p class="note">STEP 04以降は月1回の定例と面談期の同席を基本とした継続契約になります。診断のみ、研修のみといった単発でのご依頼にも対応しています。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Company ============ -->
+  <section class="section section--panel" id="company" aria-labelledby="companyTitle">
+    <div class="wrap split">
+      <div class="split__head">
+        <span class="eyebrow">Company</span>
+        <h2 class="sec-title" id="companyTitle">会社概要</h2>
+        <p class="sec-lead">2026年8月末時点の情報です。</p>
+      </div>
+
+      <div class="split__body">
+        <table class="table-company">
+          <tbody>
+            <tr><th scope="row">商号</th><td><strong>株式会社アシタモハレ</strong><br>ASHITAMOHARE Inc.</td></tr>
+            <tr><th scope="row">設立</th><td>2017年5月</td></tr>
+            <tr><th scope="row">代表者</th><td>代表取締役　佐久間 陽子</td></tr>
+            <tr><th scope="row">資本金</th><td>3,000万円</td></tr>
+            <tr><th scope="row">従業員数</th><td>24名（うちコンサルタント18名／社会保険労務士2名）</td></tr>
+            <tr><th scope="row">所在地</th><td>本社　—　東京都渋谷区代々木3-8-3 代々木フロントビル7F<br>関西オフィス　—　大阪市北区中之島2-2-7 中之島セントラル6F</td></tr>
+            <tr><th scope="row">事業内容</th><td>人事制度（等級・評価・報酬）の設計および運用定着支援／評価者研修・管理職研修／従業員サーベイの設計と分析／要員計画・人件費マネジメント支援</td></tr>
+            <tr><th scope="row">提携</th><td>社会保険労務士法人ハレノヒ（就業規則・賃金規程の改定）</td></tr>
+            <tr><th scope="row">主な支援実績</th><td>製造、IT・ソフトウェア、医療・福祉、小売、専門サービス（従業員50〜800名規模が中心）</td></tr>
+          </tbody>
+        </table>
+
+        <blockquote class="message">
+          <p>人事制度の相談を受けるとき、多くの会社ですでに立派な制度が存在しています。うまくいっていないのは中身ではなく、評価者が使いこなせていない、社員が仕組みを知らない、という運用の側にあることがほとんどです。だから私たちは、設計書を納品して終わりにせず、最初の評価会議に同席します。社名のとおり、明日からの働き方が少しでも見通しよくなることを、仕事の基準にしています。</p>
+          <footer><span>代表取締役</span>佐久間 陽子</footer>
+        </blockquote>
+
+        <div class="history" id="history">
+          <div class="history__row"><p class="history__date">2017.05</p><p class="history__text">東京・代々木に創業。中堅企業向けの評価制度設計から開始。</p></div>
+          <div class="history__row"><p class="history__date">2019.02</p><p class="history__text">評価者研修プログラム「ハレトーク」の提供を開始。</p></div>
+          <div class="history__row"><p class="history__date">2021.04</p><p class="history__text">従業員向け納得度サーベイ「ハレ度調査」をリリース。</p></div>
+          <div class="history__row"><p class="history__date">2023.08</p><p class="history__text">関西オフィスを開設、西日本の中堅企業向け支援を本格化。</p></div>
+          <div class="history__row"><p class="history__date">2025.03</p><p class="history__text">制度設計の累計支援企業が100社を突破。</p></div>
+          <div class="history__row"><p class="history__date">2026.06</p><p class="history__text">社会保険労務士法人ハレノヒと業務提携し、規程改定までワンストップ化。</p></div>
         </div>
       </div>
-    </section>
-    <!-- /service -->
-    <!-- team -->
-    <section id="team" class="section section-article team">
-      <div class="section_inner">
-        <div class="motion motion-bl">
-          <h1 class="c-headding">TEAM</h1>
-        </div>
-        <h2 class="c-headding_sub fade">チーム</h2>
-        <div class="team_list fade">
-          <dl class="team_list_item" id="career_01">
-            <dt class="team_list_item_title">
-              望月達矢（Co-founder）
-            </dt>
-            <dd class="c-text team_list_item_text">
-              大学卒業後、新卒でアフラック生命保険株式会社に入社。その後、株式会社ビズリーチ（現：ビジョナル株式会社）等を経て、2017年12月に株式会社メルカリへ入社。メルカリグループの幅広い人事機能（人事制度企画・HRBP・組織開発・人事労務）の統括責任者および子会社人事責任者を歴任し、メルカリグループの2000名規模までの組織拡大を牽引。2023年4月に株式会社Asobicaに入社し、VP of HRおよびピープル＆コミュニケーション本部長として、人事・広報・コミュニケーションデザイン領域の統括を担当しながら、社外では株式会社鹿島アントラーズFC含め複数社のHRアドバイザリーにも従事している。FBranch合同会社では、経営全般およびコンサルティングをリード。
-            </dd>
-          </dl>
-          <dl class="team_list_item" id="career_02">
-            <dt class="team_list_item_title">
-              塚田聖也（Co-founder）
-            </dt>
-            <dd class="c-text team_list_item_text">
-              大学卒業後、独立系SIerへ入社。その後、アクセンチュア株式会社や、PayPay株式会社でプロダクト開発を担当。2024年9月に株式会社Asobicaに入社し、プロダクトマネジメント業務を担当している。FBranch合同会社では、イネーブルメントおよびシステム開発をリード。
-            </dd>
-          </dl>
-        </div>
+    </div>
+  </section>
+
+  <!-- ============ News ============ -->
+  <section class="section" id="news" aria-labelledby="newsTitle">
+    <div class="wrap split">
+      <div class="split__head">
+        <span class="eyebrow">News</span>
+        <h2 class="sec-title" id="newsTitle">ニュース</h2>
+        <p class="sec-lead">プレスリリース、調査レポート、セミナー情報を掲載しています。</p>
       </div>
-    </section>
-    <!-- /team -->
-    <!-- company -->
-    <section id="company" class="section section-article company">
-      <div class="section_inner">
-        <div class="motion motion-bl">
-          <h1 class="c-headding slide">COMPANY</h1>
+
+      <div class="split__body">
+        <div class="news-list">
+          <a class="news__item" href="/news.html">
+            <time class="news__date" datetime="2026-08-20">2026.08.20</time>
+            <span class="news__cat">お知らせ</span>
+            <span class="news__title">2027年新卒採用のエントリー受付を開始しました</span>
+            <span class="news__arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="news__item" href="/news.html">
+            <time class="news__date" datetime="2026-07-31">2026.07.31</time>
+            <span class="news__cat">レポート</span>
+            <span class="news__title">調査レポート「評価制度の納得度実態調査 2026」（回答2,145名）を公開しました</span>
+            <span class="news__arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="news__item" href="/news.html">
+            <time class="news__date" datetime="2026-06-12">2026.06.12</time>
+            <span class="news__cat">プレス</span>
+            <span class="news__title">社会保険労務士法人ハレノヒと業務提携しました</span>
+            <span class="news__arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="news__item" href="/news.html">
+            <time class="news__date" datetime="2026-05-09">2026.05.09</time>
+            <span class="news__cat">セミナー</span>
+            <span class="news__title">オンラインセミナー「評価者研修、最初のサイクル」を開催しました</span>
+            <span class="news__arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="news__item" href="/news.html">
+            <time class="news__date" datetime="2026-04-02">2026.04.02</time>
+            <span class="news__cat">お知らせ</span>
+            <span class="news__title">制度運用支援（STEP 04）の料金体系を改定しました</span>
+            <span class="news__arrow" aria-hidden="true">→</span>
+          </a>
         </div>
-        <h2 class="c-headding_sub fade">会社概要</h2>
-        <dl class="c-tb fade">
-          <dt class="c-tb_title">会社名</dt>
-          <dd class="c-tb_text">株式会社アシタモハレ</dd>
-          <dt class="c-tb_title">設立日</dt>
-          <dd class="c-tb_text">令和5年4月11日</dd>
-          <!-- 
-        <dt class="tb_title">主な取引実績</dt>
-        <dd class="tb_text">TBD</dd>
-        -->
-          <dt class="c-tb_title">代表者</dt>
-          <dd class="c-tb_text">
-            <span>
-            望月達矢 (<a class="c-link c-tb_link" href="#career_01">経歴</a>) <br />
-            塚田聖也 (<a class="c-link c-tb_link" href="#career_02">経歴</a>) 
-            </span>
-          </dd>
-          <dt class="c-tb_title">所在地</dt>
-          <dd class="c-tb_text">
-            〒150-0043<br />
-            東京都渋谷区道玄坂1丁目10番8号<br />
-            渋谷道玄坂東急ビル2F-C<br />
-          </dd>
-        </dl>
+        <a class="link-more" href="/news.html">ニュース一覧を見る
+          <svg width="18" height="8" viewBox="0 0 18 8" fill="none" aria-hidden="true"><path d="M0 4h16M12.5 1L16 4l-3.5 3" stroke="currentColor" stroke-width="1"/></svg>
+        </a>
       </div>
-    </section>
-    <!-- /company -->
-    <!-- contact -->
-    <section id="contact" class="section section-article contact">
-      <div class="section_inner">
-        <div class="motion motion-bl">
-          <h1 class="c-headding">CONTACT</h1>
+    </div>
+  </section>
+
+  <!-- ============ Careers ============ -->
+  <section class="section section--panel" id="careers" aria-labelledby="careersTitle">
+    <div class="wrap split">
+      <div class="split__head">
+        <span class="eyebrow">Careers</span>
+        <h2 class="sec-title" id="careersTitle">採用情報</h2>
+        <p class="sec-lead">選考は書類選考、ケース面談、現場メンバーとの面談の3ステップ。所要は概ね3週間です。</p>
+      </div>
+
+      <div class="split__body">
+        <div class="jobs">
+          <article class="job">
+            <p class="job__cat">Mid-career</p>
+            <h3 class="job__title">人事コンサルタント</h3>
+            <p class="job__text">事業会社の人事、または人事ファームでの実務経験がある方。制度設計から運用同行まで一貫して担当していただきます。</p>
+            <dl class="job__meta">
+              <div><dt>雇用形態</dt><dd>正社員</dd></div>
+              <div><dt>勤務地</dt><dd>東京／大阪</dd></div>
+              <div><dt>想定年収</dt><dd>650〜1,100万円</dd></div>
+            </dl>
+          </article>
+          <article class="job">
+            <p class="job__cat">Facilitator</p>
+            <h3 class="job__title">研修ファシリテーター</h3>
+            <p class="job__text">評価者研修・管理職研修の登壇を担当。年間120日程度の登壇となるため、現場の管理職の言葉で話せる方を歓迎します。</p>
+            <dl class="job__meta">
+              <div><dt>雇用形態</dt><dd>正社員／業務委託</dd></div>
+              <div><dt>勤務地</dt><dd>東京（出張あり）</dd></div>
+              <div><dt>想定年収</dt><dd>550〜850万円</dd></div>
+            </dl>
+          </article>
+          <article class="job">
+            <p class="job__cat">Analyst</p>
+            <h3 class="job__title">アナリスト（第二新卒・新卒）</h3>
+            <p class="job__text">評価分布やサーベイの集計、報酬テーブル・人件費のシミュレーションを担当します。制度設計のドキュメント作成もお任せします。</p>
+            <dl class="job__meta">
+              <div><dt>雇用形態</dt><dd>正社員</dd></div>
+              <div><dt>勤務地</dt><dd>東京</dd></div>
+              <div><dt>想定年収</dt><dd>450〜540万円</dd></div>
+            </dl>
+          </article>
         </div>
-        <h2 class="c-headding_sub fade">お問い合わせ</h2>
-        <p class="c-text fade">以下までメールでお問い合わせください</p>
-        <p class="c-text fade"><a class="c-link contact_mail" href="mailto:info@fbranch.co.jp">info@fbranch.co.jp</a></p>
+        <p class="note">職務内容の詳細および応募方法は採用ページからご確認ください。カジュアル面談のみのご希望も歓迎しています。</p>
       </div>
-    </section>
-    <!-- /contact -->
-  </main>
-  <!-- pagetop -->
-  <div class="pagetop js-pagetop">
-    <div class="pagetop_inner">
-      <a class="pagetop_btn js-pagetop_btn" href="#aboutus"><span class="pagetop_btn_arrow"></span></a>
+    </div>
+  </section>
+
+  <!-- ============ Contact ============ -->
+  <section class="section section--soft" id="contact" aria-labelledby="contactTitle">
+    <div class="wrap split">
+      <div class="split__head">
+        <span class="eyebrow">Contact</span>
+        <h2 class="sec-title" id="contactTitle">お問い合わせ</h2>
+        <p class="sec-lead">2営業日以内にご担当者よりご連絡します。まずは現行制度の課題整理から、無料の初回面談を承っています。</p>
+      </div>
+
+      <div class="split__body contact__grid">
+        <div>
+          <form class="form" id="contactForm" novalidate>
+            <div class="form__row">
+              <div class="field">
+                <label class="field__label" for="f-company">会社名 <span class="req">必須</span></label>
+                <input class="control" type="text" id="f-company" name="company" placeholder="株式会社〇〇"
+                       autocomplete="organization" required>
+                <p class="field__error" data-error-for="f-company" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="f-name">お名前 <span class="req">必須</span></label>
+                <input class="control" type="text" id="f-name" name="name" placeholder="山田 太郎"
+                       autocomplete="name" required>
+                <p class="field__error" data-error-for="f-name" aria-live="polite"></p>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="field">
+                <label class="field__label" for="f-email">メールアドレス <span class="req">必須</span></label>
+                <input class="control" type="email" id="f-email" name="email" placeholder="taro.yamada@example.co.jp"
+                       autocomplete="email" required>
+                <p class="field__error" data-error-for="f-email" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="f-size">従業員数</label>
+                <select class="control" id="f-size" name="size">
+                  <option value="">〜50名</option>
+                  <option value="51-100">51〜100名</option>
+                  <option value="101-300">101〜300名</option>
+                  <option value="301-800">301〜800名</option>
+                  <option value="801-">801名以上</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="f-topic">ご相談内容</label>
+              <select class="control" id="f-topic" name="topic">
+                <option value="design">評価・報酬制度の設計について</option>
+                <option value="rollout">制度の浸透・運用定着について</option>
+                <option value="survey">人事制度診断・従業員サーベイについて</option>
+                <option value="workforce">要員計画・人件費マネジメントについて</option>
+                <option value="document">資料請求（支援事例集）</option>
+                <option value="other">その他</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="f-detail">ご相談の概要 <span class="req">必須</span></label>
+              <textarea class="control" id="f-detail" name="detail" required
+                        placeholder="現行制度の運用年数、いま感じている課題、改定を検討されている時期などをお書き添えいただけると、初回のご提案がより具体的になります。"></textarea>
+              <p class="field__error" data-error-for="f-detail" aria-live="polite"></p>
+            </div>
+
+            <div class="form__foot">
+              <button class="btn btn--fill" type="submit">送信する</button>
+              <p class="form__caution">※ これはモックページのため、内容は送信されません。</p>
+            </div>
+
+            <p class="form__result" id="formResult" role="status"></p>
+          </form>
+        </div>
+
+        <aside>
+          <div class="aside-card">
+            <p class="aside-card__label">お電話でのご相談</p>
+            <a class="aside-card__tel" href="tel:+81312345678">03-1234-5678</a>
+            <p>受付時間 平日 9:30–18:00<br>（年末年始を除く）</p>
+          </div>
+          <div class="aside-card">
+            <p class="aside-card__label">資料請求</p>
+            <p>サービス紹介および制度設計の支援事例集（PDF・20ページ）をお送りします。フォームの「ご相談内容」欄から「資料請求」を選択してください。</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ Footer ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="/" aria-label="株式会社アシタモハレ ホームへ">
+          <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <circle cx="16" cy="14.5" r="7" fill="none" stroke="currentColor" stroke-width="1.4"/>
+            <path d="M3 22.5h26M7.5 26.5h17" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+          <span>
+            <span class="brand__name">アシタモハレ</span>
+            <span class="brand__latin">Ashitamohare Inc.</span>
+          </span>
+        </a>
+        <p class="footer__addr">
+          〒151-0053 東京都渋谷区代々木3-8-3 代々木フロントビル7F<br>
+          TEL <a href="tel:+81312345678">03-1234-5678</a>（平日 9:30–18:00）
+        </p>
+      </div>
+
+      <nav class="footer__col" aria-label="事業紹介">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="/#services">評価・報酬制度の設計</a></li>
+          <li><a href="/#services">制度の浸透・運用定着</a></li>
+          <li><a href="/#process">支援の進め方</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__col" aria-label="会社情報">
+        <h3>About</h3>
+        <ul>
+          <li><a href="/#company">会社概要</a></li>
+          <li><a href="/#history">沿革</a></li>
+          <li><a href="/#careers">採用情報</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__col" aria-label="サポート">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="/#contact">お問い合わせ</a></li>
+          <li><a href="/#contact">資料請求</a></li>
+          <li><a href="/privacy.html">プライバシーポリシー</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer__bottom">
+      <small>&copy; <span id="year">2026</span> Ashitamohare Inc.</small>
+      <small>Design Mock — 架空の企業です</small>
     </div>
   </div>
-  <!-- /pagetop -->
-  <footer id="footer" class="footer">
-    <div class="footer_inner">
-      <!-- サイトのコピーライト情報 -->
-      <p class="c-text footer_copy">Copyright © FBranch合同会社 All Rights Reserved.</p>
-    </div>
-  </footer>
+</footer>
 
+<a class="to-top" id="toTop" href="#main" aria-label="ページ上部へ戻る">
+  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><path d="M6.5 12V1.5M1.5 6L6.5 1l5 5" stroke="currentColor" stroke-width="1.1"/></svg>
+</a>
+
+<script src="/js/main.js" defer></script>
 </body>
-
 </html>
