@@ -104,7 +104,7 @@
       <a href="#company">会社概要</a>
     </nav>
     <a class="head-cta" href="#contact">お問い合わせ</a>
-    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="メニューを開く">≡</button>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav" aria-label="メニューを開く"><span class="menu-icon" aria-hidden="true"></span></button>
   </div>
 </header>
 
@@ -147,7 +147,7 @@
           <p>組織の中で最初に削られるのは、数字で説明できないものです。無駄に見える会議。理屈に合わない配置。ひとつずつは正しい判断です。けれど積み重なると、<strong>組織は少しずつ正しくなり、少しずつつまらなくなります。</strong>人を動かしているのは、多くの場合、感情です。</p>
           <p>だから私たちがやるのは、非合理に居場所をつくることです。ただし、それ自体が目的ではありません。<strong>もはや戦略では差はつかず、実行力でしか差がつかない時代です。</strong>社員の行動の積み重ねが実行力であり、事業の成果を決めています。</p>
           <p><strong>正しいことをしていけばいくほど、実行力は静かに落ちていく。</strong>その1ミリの違和感を見逃さず、放置しないこと。そこが出発点です。私たちがやりたいのは、社員の行動を変え、実行力を上げ、ビジネスの成功確度を上げることです。</p>
-          <p>そしてこれは、会社の中だけの話ではありません。何を着て出かけるか、休みの日をどう使うか。会社の外にも、非合理の居場所は要ります。制度に落とせば組織デザインに、プロダクトに落とせばプロダクトマネジメントに、身につけるものに落とせばアパレルになります。<strong>落とす先は、これからも増やします。</strong>領域は手段であって、目的ではありません。</strong></p>
+          <p>そしてこれは、会社の中だけの話ではありません。何を着て出かけるか、休みの日をどう使うか。会社の外にも、非合理の居場所は要ります。制度に落とせば組織デザインに、プロダクトに落とせばプロダクトマネジメントに、身につけるものに落とせばアパレルになります。<strong>落とす先は、これからも増やします。</strong>領域は手段であって、目的ではありません。</p>
         </div>
 
         <div class="glyph">
@@ -271,21 +271,21 @@
         <div class="rule"></div>
       </div>
       <div class="contact-grid">
-        <form class="mockform" id="contactForm" novalidate>
+        <form class="contact-form" id="contactForm" novalidate>
           <div class="row2">
             <div class="field">
               <label for="f-company">会社名・団体名<span class="req">必須</span></label>
-              <input id="f-company" name="company" type="text" autocomplete="organization" placeholder="株式会社〇〇">
+              <input id="f-company" name="company" type="text" autocomplete="organization" enterkeyhint="next" required placeholder="株式会社〇〇">
             </div>
             <div class="field">
               <label for="f-name">お名前<span class="req">必須</span></label>
-              <input id="f-name" name="name" type="text" autocomplete="name" placeholder="山田 太郎">
+              <input id="f-name" name="name" type="text" autocomplete="name" enterkeyhint="next" required placeholder="山田 太郎">
             </div>
           </div>
           <div class="row2">
             <div class="field">
               <label for="f-mail">メールアドレス<span class="req">必須</span></label>
-              <input id="f-mail" name="email" type="email" autocomplete="email" placeholder="taro.yamada@example.co.jp">
+              <input id="f-mail" name="email" type="email" inputmode="email" autocomplete="email" autocapitalize="off" spellcheck="false" enterkeyhint="next" required placeholder="taro.yamada@example.co.jp">
             </div>
             <div class="field">
               <label for="f-size">従業員数</label>
@@ -316,10 +316,11 @@
           </div>
           <div class="field">
             <label for="f-body">ご相談の概要<span class="req">必須</span></label>
-            <textarea id="f-body" name="body" placeholder="いま感じている課題や、実現したい状態をお書き添えいただけると、初回のご提案が具体的になります。"></textarea>
+            <textarea id="f-body" name="body" required placeholder="いま感じている課題や、実現したい状態をお書き添えいただけると、初回のご提案が具体的になります。"></textarea>
           </div>
           <div class="form-foot">
             <button class="submit" type="submit">送信する</button>
+            <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
           </div>
         </form>
 
@@ -328,7 +329,7 @@
           <p>フォーム送信 → 初回面談（オンライン可・無料）→ ご提案とお見積り。時期が未定の段階でも構いません。</p>
           <hr>
           <h3>メールでのご連絡</h3>
-          <p class="mailaddr">mochizuki@ashitamo80.com</p>
+          <p class="mailaddr"><a href="mailto:mochizuki@ashitamo80.com">mochizuki@ashitamo80.com</a></p>
           <p>フォームが使えない場合はこちらへ直接どうぞ。</p>
           <hr>
           <h3>一緒にやる人を探しています</h3>
