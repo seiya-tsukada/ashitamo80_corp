@@ -9,10 +9,11 @@
     btn.setAttribute('aria-expanded', String(open));
     btn.setAttribute('aria-label', open ? 'メニューを閉じる' : 'メニューを開く');
     head.classList.toggle('is-open', open);
+    document.documentElement.classList.toggle('menu-open', open);
   }
   function syncNav(){
     if(mq.matches){ setMenu(false); }
-    else { nav.hidden = false; head.classList.remove('is-open'); }
+    else { nav.hidden = false; head.classList.remove('is-open'); document.documentElement.classList.remove('menu-open'); }
   }
   syncNav();
   mq.addEventListener('change', syncNav);
