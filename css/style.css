@@ -24,6 +24,9 @@
     --label-col:196px;
     --gap:40px;
     --face-plate:transparent;
+
+    --r-card:16px;
+    --r-ctl:12px;
   }
   @media (prefers-color-scheme: dark){
     :root:not([data-theme="light"]){
@@ -89,7 +92,7 @@
   .nav a.is-active{color:var(--accent);border-bottom-color:var(--accent)}
   .head-cta{
     flex:none;text-decoration:none;font-size:12.5px;letter-spacing:.03em;white-space:nowrap;
-    background:var(--accent);color:var(--on-accent);padding:9px 16px;border-radius:1px;transition:opacity .18s;
+    background:var(--accent);color:var(--on-accent);padding:9px 18px;border-radius:999px;transition:opacity .18s;
   }
   .head-cta:hover{opacity:.86}
   .menu-btn{display:none}
@@ -126,7 +129,7 @@
   .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
   .btn{
     display:inline-flex;align-items:center;gap:10px;text-decoration:none;
-    font-size:13.5px;letter-spacing:.06em;padding:13px 24px;border-radius:1px;
+    font-size:13.5px;letter-spacing:.06em;padding:13px 24px;border-radius:var(--r-ctl);
     border:1px solid var(--accent);transition:background .18s,color .18s,opacity .18s;
   }
   .btn-solid{background:var(--accent);color:var(--on-accent)}
@@ -271,7 +274,7 @@
 
   /* ---------- team ---------- */
   .team-lead{font-size:14.5px;color:var(--ink-2);margin:0 0 30px;max-width:41em}
-  .team{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);overflow:hidden}
+  .team{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r-card);overflow:hidden}
   .member{background:var(--surface);padding:26px 26px 28px;display:flex;flex-direction:column;min-width:0}
   .member .face{width:96px;height:96px;margin:0 0 16px;display:block;border-radius:50%}
   .member .face-line{padding:8px;box-sizing:border-box;background:var(--face-plate);object-fit:contain}
@@ -319,10 +322,10 @@
   form.contact-form{display:grid;gap:18px;min-width:0}
   .field{display:grid;gap:7px;min-width:0}
   .field label{font-size:12.5px;letter-spacing:.06em;color:var(--ink-2)}
-  .field label .req{font-size:10px;color:var(--accent-ink);border:1px solid var(--accent);padding:1px 5px;margin-left:8px;border-radius:1px;letter-spacing:.08em}
+  .field label .req{font-size:10px;color:var(--accent-ink);border:1px solid var(--accent);padding:1px 7px;margin-left:8px;border-radius:999px;letter-spacing:.08em}
   .field input,.field select,.field textarea{
     font-family:inherit;font-size:14px;color:var(--ink);background:var(--surface);
-    border:1px solid var(--line-strong);border-radius:1px;padding:11px 13px;width:100%;transition:border-color .18s;
+    border:1px solid var(--line-strong);border-radius:var(--r-ctl);padding:11px 14px;width:100%;transition:border-color .18s;
   }
   .field textarea{resize:vertical;min-height:118px;line-height:1.8}
   .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--accent);outline:none}
@@ -332,13 +335,13 @@
   button.submit{
     font-family:inherit;font-size:13.5px;letter-spacing:.08em;cursor:pointer;
     background:var(--accent);color:var(--on-accent);border:1px solid var(--accent);
-    padding:13px 34px;border-radius:1px;transition:opacity .18s;
+    padding:13px 34px;border-radius:var(--r-ctl);transition:opacity .18s;
   }
   button.submit:hover{opacity:.86}
   .form-msg{font-size:13px;color:var(--accent-ink);line-height:1.7;margin:0;min-width:0;overflow-wrap:anywhere}
   .form-msg:empty{display:none}
   .form-msg.is-error{color:#c0553f}
-  .contact-side{border:1px solid var(--line);background:var(--surface);padding:26px 24px}
+  .contact-side{border:1px solid var(--line);background:var(--surface);padding:26px 24px;border-radius:var(--r-card)}
   .contact-side h3{font-family:var(--f-display);font-weight:600;font-size:15px;margin:0 0 4px;letter-spacing:.04em}
   .contact-side .mailaddr{font-family:var(--f-mono);font-size:13px;margin:12px 0 0;word-break:break-all;color:var(--ink)}
   .contact-side .mailaddr{margin-top:4px}
@@ -503,13 +506,13 @@
   }
   .biz-close p{font-size:13.5px;color:var(--ink-2);margin:13px 0 0;max-width:40em;line-height:1.9}
   .biz-lead{font-size:14.5px;color:var(--ink-2);margin:0 0 34px;max-width:40em;line-height:1.95}
-  .biz{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+  .biz{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r-card);overflow:hidden}
   .biz article{background:var(--surface);padding:28px 26px;display:flex;flex-direction:column;min-width:0}
   .biz .hd{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
   .biz .no{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--muted)}
   .biz .st{
     font-family:var(--f-mono);font-size:9.5px;letter-spacing:.1em;white-space:nowrap;
-    border:1px solid var(--line-strong);color:var(--muted);padding:2px 9px;border-radius:1px;
+    border:1px solid var(--line-strong);color:var(--muted);padding:2px 10px;border-radius:999px;
   }
   .biz .st.is-live{border-color:var(--accent);color:var(--accent-ink);background:var(--accent-wash)}
   .biz h3{font-family:var(--f-display);font-weight:600;font-size:22px;margin:16px 0 0;letter-spacing:.05em;line-height:1.45}
@@ -560,8 +563,6 @@
     :root{
       --gutter:clamp(18px,5.6vw,24px);
       --head-h:60px;
-      --r-card:16px;
-      --r-ctl:12px;
     }
     .wrap{
       padding-left:max(var(--gutter), env(safe-area-inset-left));
@@ -630,7 +631,6 @@
     .biz h3{font-size:21px;margin-top:14px}
     .biz .one{font-size:14.5px}
     .biz p,.member .bio{font-size:14px;line-height:1.95}
-    .biz .st{border-radius:999px;padding:2px 10px}
     .member{align-items:flex-start}
     .member .face{width:80px;height:80px;margin-bottom:14px}
     .member h3{font-size:21px}
@@ -664,7 +664,6 @@
     .field input:focus,.field select:focus,.field textarea:focus{
       border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb, var(--tick) 35%, transparent);
     }
-    .field label .req{border-radius:999px;padding:1px 7px}
     button.submit{min-height:56px;border-radius:var(--r-ctl);font-size:15px}
     .contact-side{border-radius:var(--r-card);padding:24px 22px}
 
