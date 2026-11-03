@@ -146,3 +146,20 @@ CSS / JS / 画像は 1年キャッシュ、HTML は `max-age=0, must-revalidate`
 - S3 の静的ウェブサイトホスティングを有効化し、CloudFront のオリジンをカスタムオリジン（ウェブサイトエンドポイント）にする（この場合 OAC は使えず、バケットが公開になります）
 
 将来ページ数が増える場合は前者を推奨します。その場合 `news.html` → `news/index.html` に移し、各ページの内部リンクとサイトマップの `loc` を合わせて修正してください。
+
+---
+
+## 7. お問い合わせフォーム（TypeScript）
+
+フォームの送信処理は `ts/contact.ts` に TypeScript で書き、`tsc` で `js/contact.js` に変換してコミットしています（バンドラーなし）。
+入力値を集めて JSON にし、`fetch` で [ashitamo80_corp_mail_api](https://github.com/seiya-tsukada/ashitamo80_corp_mail_api)（Vercel）に送ります。
+
+```bash
+npm install
+npm run build      # ts/contact.ts → js/contact.js（編集後は必ず実行してコミット）
+npm run watch      # 開発中に自動で変換
+```
+
+API の送信先は `index.html` の `<form data-endpoint="…">` で設定します。`localhost` で開いたときは、手元の API（`http://localhost:8001/api/contact`）に自動で切り替えます。
+
+ボット対策は、人間には見えない入力欄（honeypot、`name="website"`）だけです。値が入っていた送信は、API 側でメールを送らずに成功扱いにします。
