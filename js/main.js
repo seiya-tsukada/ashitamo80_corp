@@ -47,44 +47,4 @@
     });
   }, { rootMargin: '-66px 0px -70% 0px', threshold: 0 });
   Object.keys(map).forEach(function(id){ io.observe(document.getElementById(id)); });
-
-  // お問い合わせ：送信 API ができるまでは、入力内容を差し込んだメールを作成する
-  var MAIL_TO = 'mochizuki@ashitamo80.com';
-  var form = document.getElementById('contactForm');
-  var msg = document.getElementById('formMsg');
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    var fields = Array.prototype.slice.call(form.querySelectorAll('input, select, textarea'));
-    var invalid = fields.filter(function(f){
-      var ok = f.checkValidity() && (!f.required || f.value.trim() !== '');
-      f.setAttribute('aria-invalid', String(!ok));
-      return !ok;
-    });
-    if(invalid.length){
-      msg.classList.add('is-error');
-      msg.textContent = '未入力または形式が正しくない項目があります。';
-      invalid[0].focus();
-      return;
-    }
-    var v = function(name){ return form.elements[name].value.trim(); };
-    var subject = '【お問い合わせ】' + v('company') + ' ' + v('name') + ' 様';
-    var body = [
-      '会社名・団体名: ' + v('company'),
-      'お名前: ' + v('name'),
-      'メールアドレス: ' + v('email'),
-      '従業員数: ' + v('size'),
-      'ご相談内容: ' + v('topic'),
-      '',
-      'ご相談の概要:',
-      v('body')
-    ].join('\n');
-    msg.classList.remove('is-error');
-    msg.textContent = 'メールアプリが開きます。内容を確認のうえ送信してください。開かない場合は ' + MAIL_TO + ' へ直接お送りください。';
-    location.href = 'mailto:' + MAIL_TO + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-  });
-  form.addEventListener('input', function(e){
-    if(e.target.getAttribute('aria-invalid') === 'true' && e.target.checkValidity() && e.target.value.trim() !== ''){
-      e.target.setAttribute('aria-invalid', 'false');
-    }
-  });
 })();

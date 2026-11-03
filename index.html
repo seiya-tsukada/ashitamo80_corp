@@ -271,15 +271,17 @@
         <div class="rule"></div>
       </div>
       <div class="contact-grid">
-        <form class="contact-form" id="contactForm" novalidate>
+        <!-- 送信は ts/contact.ts（fetch で API に JSON を送る）。送信先は data-endpoint -->
+        <form class="contact-form" id="contactForm" novalidate
+              data-endpoint="https://ashitamo80-corp-mail-api.vercel.app/api/contact">
           <div class="row2">
             <div class="field">
               <label for="f-company">会社名・団体名<span class="req">必須</span></label>
-              <input id="f-company" name="company" type="text" autocomplete="organization" enterkeyhint="next" required placeholder="株式会社〇〇">
+              <input id="f-company" name="company" type="text" autocomplete="organization" enterkeyhint="next" required maxlength="100" placeholder="株式会社〇〇">
             </div>
             <div class="field">
               <label for="f-name">お名前<span class="req">必須</span></label>
-              <input id="f-name" name="name" type="text" autocomplete="name" enterkeyhint="next" required placeholder="山田 太郎">
+              <input id="f-name" name="name" type="text" autocomplete="name" enterkeyhint="next" required maxlength="50" placeholder="山田 太郎">
             </div>
           </div>
           <div class="row2">
@@ -316,7 +318,12 @@
           </div>
           <div class="field">
             <label for="f-body">ご相談の概要<span class="req">必須</span></label>
-            <textarea id="f-body" name="body" required placeholder="いま感じている課題や、実現したい状態をお書き添えいただけると、初回のご提案が具体的になります。"></textarea>
+            <textarea id="f-body" name="body" required maxlength="4000" placeholder="いま感じている課題や、実現したい状態をお書き添えいただけると、初回のご提案が具体的になります。"></textarea>
+          </div>
+          <!-- ボット対策：人間には見えない入力欄（honeypot） -->
+          <div class="hp" aria-hidden="true">
+            <label for="f-website">Website</label>
+            <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
           </div>
           <div class="form-foot">
             <button class="submit" type="submit">送信する</button>
@@ -388,5 +395,6 @@
 </footer>
 
 <script src="/js/main.js" defer></script>
+<script src="/js/contact.js" type="module"></script>
 </body>
 </html>
