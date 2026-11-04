@@ -162,6 +162,11 @@ npm run watch      # 開発中に自動で変換
 
 API の送信先は `index.html` の `<form data-endpoint="…">` で設定します。`localhost` で開いたときは、手元の API（`http://localhost:8001/api/contact`）に自動で切り替えます。
 
+送信先の URL には、Vercel の本番ドメイン（プロジェクトの Settings → Domains に表示されるもの）を使います。現在は `https://ashitamo80-corp-mail-api-ieu6-eight.vercel.app/api/contact` です。
+
+- デプロイ個別の URL（`ashitamo80-corp-mail-api-ieu6-<ハッシュ>-ashitamo80.vercel.app`）は使わないでください。デプロイのたびに変わるうえ、Deployment Protection によりログイン画面に飛ばされるため、フォームから送信できません。
+- Vercel のプロジェクト名やドメインを変えたときは、`data-endpoint` も新しいドメインに更新してください。
+
 ボット対策は、人間には見えない入力欄（honeypot、`name="website"`）だけです。値が入っていた送信は、API 側でメールを送らずに成功扱いにします。
 
 ## 8. CSS・JS を更新したとき
