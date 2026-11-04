@@ -1,6 +1,6 @@
 // お問い合わせフォーム：入力値を集めて JSON で API（ashitamo80_corp_mail_api）に送る。
 // 編集後は `npm run build` で js/contact.js を生成してコミットする。
-const MAIL_TO = 'mochizuki@ashitamo80.com';
+const MAIL_TO = 'info@ashitamo80.com';
 const TIMEOUT_MS = 15000;
 const FIELDS = ['company', 'name', 'email', 'size', 'topic', 'body'];
 // ローカル確認時は手元の API（uvicorn --port 8001）に送る
