@@ -117,7 +117,8 @@
   .hero-side p{font-size:12.5px;color:var(--muted);margin:14px 0 0;line-height:1.9}
   .hero h1{
     font-family:var(--f-display);font-weight:600;
-    font-size:clamp(26px,3.4vw,44px);line-height:1.48;letter-spacing:.02em;
+    /* ミッション文（.mission-stmt）と同じ大きさに揃える */
+    font-size:clamp(23px,3.2vw,34px);line-height:1.65;letter-spacing:.04em;
     margin:0;text-wrap:balance;
   }
   .hero h1 .q{color:var(--accent-ink)}
@@ -565,7 +566,8 @@
      ========================================================== */
   @media (max-width:760px){
     :root{
-      --gutter:clamp(18px,5.6vw,24px);
+      /* 端末幅の約7.5%（375px で 28px）。窮屈に見えないよう下限を 24px にする */
+      --gutter:clamp(24px,7.5vw,32px);
       --head-h:60px;
     }
     .wrap{
@@ -610,7 +612,7 @@
     .hero-grid{gap:28px}
     .hero-side{display:flex;flex-direction:column;gap:10px;padding:0}
     .hero-side p{margin:0;font-size:12px;line-height:1.8}
-    .hero h1{font-size:clamp(26px,7.4vw,32px);line-height:1.5;letter-spacing:.03em}
+    .hero h1{font-size:clamp(24px,6.6vw,28px);line-height:1.65;letter-spacing:.04em}
     .hero-lead{margin-top:24px;font-size:15px;line-height:2}
     .hero-actions{flex-direction:column;gap:10px;margin-top:32px}
     .hero-actions .btn{width:100%;min-height:54px;justify-content:center;border-radius:var(--r-ctl);font-size:14px}
