@@ -21,7 +21,7 @@ interface ApiResponse {
   fields?: string[];
 }
 
-const MAIL_TO = 'mochizuki@ashitamo80.com';
+const MAIL_TO = 'info@ashitamo80.com';
 const TIMEOUT_MS = 15000;
 const FIELDS: FieldName[] = ['company', 'name', 'email', 'size', 'topic', 'body'];
 
