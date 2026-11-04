@@ -26,5 +26,19 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         #-- 仮想マシン上でコマンドを実行 --#
-        run:
+        #-- 仮想マシン上でコマンドを実行 --#
+        #-- 公開不要なファイル（.git や設定ファイルなど）はアップロードしない --#
+        run: >-
           aws s3 sync --delete --region ap-northeast-1 ./ s3://www.ashitamo80.com/
+          --exclude ".git/*"
+          --exclude ".github/*"
+          --exclude ".claude/*"
+          --exclude "*.DS_Store"
+          --exclude ".gitignore"
+          --exclude "README.md"
+          --exclude "deploy.sh"
+          --exclude "package.json"
+          --exclude "package-lock.json"
+          --exclude "tsconfig.json"
+          --exclude "ts/*"
+          --exclude "node_modules/*"
